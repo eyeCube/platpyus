@@ -1,0 +1,87 @@
+This is a tutorial for designing a 2-D side-scrolling platformer video game from scratch using Python version 3.6. We will be using a module called PyGame. No prior coding experience is needed; this is a beginner's tutorial, though intermediate level game designers will also benefit from this guide. Feel free to modify the code and play around with it, making your own unique game. I encourage this throughout the tutorial.
+
+This tutorial is formatted in a specific way. In each part there are individual steps. Below each step may be some additional information in the form of tips or hints. More experienced programmers can skip most of these hints, but beginners may find them useful.
+
+What you will need:
+1. Python 3
+2. PyGame
+3. An IDE (Integrated Development Environment): I'm using IDLE
+
+This tutorial will not cover installing Python, PyGame, or an IDE on your computer. There are tutorials for this which can easily be found with a Google search, so I will assume you already have these installed and ready to use. For an IDE, you should be able to use Notepad++ or just Notepad, however I recommend something that is designed to be used for writing Python scripts.
+
+Without further ado, let's begin.
+
+<h1>Table of Contents</h1>:
+Part 1: Starting a New Project
+
+<h2>Part 1: Starting a New Project</h2>
+
+Create a new directory for your project, and call it whatever you want.
+	-root: All the files for your game will go inside this folder; it is called the root.
+
+Open you IDE and create a new Python file; name it "main", and save it to the root folder.
+	-"main" is a name given by convention to the file that begins the execution of your program (which, in this case, is the game).
+	
+New code [at the top of the file]
+	-note: the code is enclosed by triple quotes [''']. Do not copy those quotes, they are just to separate the code from plain text.
+	-commenting in Python: In Python we can write multi-line comments using these triple quotes, and single-line comments using hashtags.
+
+''' NEW CODE
+def main():
+	pass
+
+if __name__ == "__main__":
+	main()
+'''
+
+What does all this "boilerplate code" do? Let's break it down.
+
+''' BREAKDOWN
+def main():
+	pass
+'''
+
+First, we are creating a new <define>function</define> and we are calling it main. This particular function happens to have no arguments, nothing in between the parentheses. "def main()" accomplishes creating our new function named main, which has no arguments.
+The colon tells Python that everything following is the contents of our new function.
+"pass" is the contents of our function. pass is a <define>keyword</define> that literally does nothing, but here we are using it as a placeholder for code we will write later.
+
+''' BREAKDOWN
+if __name__ == "__main__":
+	main()
+'''
+
+Don't worry too much about this. Here we are saying that if the variable called __name__ is equal to '__main__', then execute the function called main. Basically this is Python's way of saying that if the file main.py is being executed, call the main function.
+	-You don't need to memorize this weird part, I certainly haven't, it's just 2 lines that are good practice to include in your main file. Rather than just writing '''main()''' we first do this check for good practice.
+
+WARNING: Tabs. Notice the indentation I have used. This is necessary. Python requires the use of indentation to separate the contents of functions and if statements. Four spaces is the standard, though I recommend you use an IDE that allows you to use 4-space tabs, where the tab key automatically places four spaces.
+
+Example good code:
+
+'''
+amountOfEggs = 7
+if amountOfEggs > 5:
+	print('yay')
+	
+# Result: yay
+'''
+
+Example bad code:
+
+'''
+amountOfSpam = 0
+if amountOfSpam >= 1:
+print('yay')
+
+# Result: yay
+'''
+	
+
+
+
+
+
+
+
+
+
+
